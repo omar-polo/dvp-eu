@@ -1,0 +1,32 @@
+* dvp-eu
+
+  Just another variant of the dvorak layout, made for programmers that
+  need also to type in non-english languages.
+
+** Goals
+
+   Build a decent, balanced layout and made it configurable through
+   provided patches.
+
+** Current status
+
+   This project is in its early stage of development. I'm still
+   looking for some ideas and feedback so the placement of some keys
+   may change, until a stable release.
+
+** Usage
+
+   Just put the =dvp-eu= file in some decent place, like
+   =/usr/X11R6/share/X11/xkb/symbols/= on OpenBSD, and =loadkeys
+   dvp-eu=. Than you're done!
+
+** Preview
+
+   Given that, as of now, the layout is still not definitive, I'm not
+   providing any preview of the placement. I'll provide one when it
+   will be finished. As of now, you can get a preview of the keyboard
+   with
+
+   #+BEGIN_SRC sh
+   setxkbmap dvp-eu -print | xkbcomp - - | xkbprint - - | ps2pdf -pict all - > dvp-eu.pdf
+   #+END_SRC

@@ -1,0 +1,91 @@
+// This is a variant of the Dvorak layout, inspired by the Programmer
+// Dvorak by Roland Kaufmann with special attention to the european
+// languages, Italian in particular
+//
+// Mantained by Omar Polo <omar.polo@europecom.net>
+// License: ISC
+
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "dvp-eu" {
+	include "us(dvorak)"
+
+	name[Group1] = "Dvorak Programmer European";
+
+	//            Unmodified	Shift		Altgr		Shift+Altgr
+
+	// Symbols row, left side:
+	key <TLDE> { [dollar,		asciitilde] }; // $ ~
+	key <AE01> { [ampersand] }; // &
+	key <AE02> { [braceleft,	1] }; // { 1
+	key <AE03> { [bracketleft,	2] }; // [ 2
+	key <AE04> { [parenleft,	3] }; // ( 3
+	key <AE05> { [equal, 		4] }; // = 4
+	key <AE06> { [asterisk,		5] }; // * 5
+
+	// Symbols row, left side:
+	key <AE07> { [plus,		6] }; // + 6
+	key <AE08> { [parenright,	7] }; // ) 7
+	key <AE09> { [bracketright,	8] }; // ] 8
+	key <AE10> { [braceright,	9] }; // } 9
+	key <AE11> { [exclam,		0,		exclamdown] }; // ! 0 ¡
+	key <AE12> { [numbersign] }; // #
+	key <BKSP> { [BackSpace] }; // backspace
+
+	// Upper row, left side
+	key <AD01> { [semicolon,	colon] }; // ; :
+	key <AD02> { [comma,		less,		guillemotleft] }; // , < «
+	key <AD03> { [period,		greater,	guillemotright] }; // . > »
+	key <AD04> { [p,		P,		Greek_pi,	Greek_PI] }; // p P π Π
+	key <AD05> { [y,		Y] }; // y Y
+
+	// Upper row, right side
+	key <AD06> { [f,		F] }; // 
+	key <AD07> { [g,		G] }; // 
+	key <AD08> { [c,		C] }; // 
+	key <AD09> { [r,		R,		Greek_rho,	Greek_RHO] }; // r R ρ Ρ
+	key <AD10> { [l,		L,		Greek_lambda,	Greek_LAMBDA] }; // l L λ Λ
+	key <AD11> { [slash,		question] }; // 
+	key <AD12> { [at,		asciicircum] }; // 
+
+	// home row, left side
+	key <AC01> { [a,		A,		agrave,		aacute] }; // a A à á
+	key <AC02> { [o,		O,		ograve,		oacute] }; // o O ò ó
+	key <AC03> { [e,		E,		egrave,		eacute] }; // e E è é
+	key <AC04> { [u,		U,		ugrave,		uacute] }; // u U ù ú
+	key <AC05> { [i,		I,		igrave,		iacute] }; // i I ì í
+
+	// home row, right side
+	key <AC06> { [d,		D] }; // d D
+	key <AC07> { [h,		H] }; // h H
+	key <AC08> { [t,		T,		Greek_tau,	Greek_TAU] }; // t T τ Τ
+	key <AC09> { [n,		N,		ntilde,		Ntilde] }; // n N ñ Ñ
+	// TODO: capital ssharp or sigma?
+	// key <AC10> { [s,		S,		ssharp,		0x1001E9E] }; // s S ß ẞ
+	key <AC10> { [s,		S,		Greek_sigma,	Greek_SIGMA] }; // s S σ Σ
+	key <AC11> { [minus,		underscore] }; // - _
+	key <BKSL> { [backslash,	bar] }; // \ |
+
+// From /usr/X11R6/share/x11/xkb/symbols/de
+// The unicode capital letter sharp s U+1E9E is transformed to "SS"
+// to match the rules for capitalizing sharp s in german.
+// If the capital sharp s is needed, delete the line
+// starting with <U1E9C> from /usr/share/X11/locale/iso8859-15/Compose.
+// If both doubled S and capital sharp s are needed, use  0x1001E9E
+// for capital sharp s and some free unicode codepoint like 0x1001E9C
+// for doubled S. Don`t forget to change this in the Compose file, too.
+
+	// lower row, left side
+	key <LSGT> { [Multi_key,	ssharp,		Greek_alpha,	Greek_ALPHA] };
+	key <AB01> { [apostrophe,	quotedbl,	grave] }; // ' " `
+	key <AB02> { [q,		Q] }; // q Q
+	key <AB03> { [j,		J] }; // j J
+	key <AB04> { [k,		K] }; // k K
+
+	// lower row, right side
+	key <AB05> { [x,		X] }; // x X
+	key <AB06> { [b,		B,		Greek_beta,	Greek_BETA] }; // b B β Β
+	key <AB07> { [m,		M,		Greek_mu,	Greek_MU] }; // m M μ Μ
+	key <AB08> { [w,		W] }; // w W
+	key <AB09> { [v,		V] }; // v V
+	key <AB10> { [z,		Z] }; // z Z
+};
