@@ -28,7 +28,7 @@ xkb_symbols "dvp-eu" {
 	key <AE09> { [bracketright,	8] }; // ] 8
 	key <AE10> { [braceright,	9] }; // } 9
 	key <AE11> { [exclam,		0,		exclamdown] }; // ! 0 ¡
-	key <AE12> { [numbersign] }; // #
+	key <AE12> { [numbersign,	percent] }; // # %
 	key <BKSP> { [BackSpace] }; // backspace
 
 	// Upper row, left side
