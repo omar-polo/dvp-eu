@@ -16,11 +16,11 @@ xkb_symbols "dvp-eu" {
 	// Symbols row, left side:
 	key <TLDE> { [dollar,		asciitilde] }; // $ ~
 	key <AE01> { [ampersand] }; // &
-	key <AE02> { [braceleft,	1] }; // { 1
-	key <AE03> { [bracketleft,	2] }; // [ 2
-	key <AE04> { [parenleft,	3] }; // ( 3
-	key <AE05> { [equal, 		4] }; // = 4
-	key <AE06> { [asterisk,		5] }; // * 5
+	key <AE02> { [asterisk,		1] }; // * 1
+	key <AE03> { [braceleft,	2] }; // { 2
+	key <AE04> { [bracketleft,	3] }; // [ 3
+	key <AE05> { [parenleft,	4] }; // ( 4
+	key <AE06> { [equal, 		5] }; // = 5
 
 	// Symbols row, left side:
 	key <AE07> { [plus,		6] }; // + 6
