@@ -3,7 +3,6 @@
 // languages, Italian in particular
 //
 // Mantained by Omar Polo <omar.polo@europecom.net>
-// License: ISC
 
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "dvp-eu" {
