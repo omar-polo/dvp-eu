@@ -3,6 +3,7 @@
 // languages, Italian in particular
 //
 // Mantained by Omar Polo <omar.polo@europecom.net>
+// License: ISC
 
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "dvp-eu" {
@@ -43,7 +44,7 @@ xkb_symbols "dvp-eu" {
 	key <AD08> { [c,		C,		ccedilla,	Ccedilla] }; //  c C ç Ç
 	key <AD09> { [r,		R,		Greek_rho,	Greek_RHO] }; // r R ρ Ρ
 	key <AD10> { [l,		L,		Greek_lambda,	Greek_LAMBDA] }; // l L λ Λ
-	key <AD11> { [slash,		question] }; // 
+	key <AD11> { [slash,		question,	masculine,	questiondown] }; // 
 	key <AD12> { [at,		asciicircum] }; // 
 
 	// home row, left side
