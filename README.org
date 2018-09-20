@@ -35,9 +35,3 @@
 
    Every form of contribution is welcome. Just open an issue or write
    me an email!
-
-** License
-
-   The layout is distributed under the terms of the BSD 2-clause
-   license, but I'll be more than happy to release it also under
-   different (free) license if needed!
