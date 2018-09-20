@@ -41,7 +41,7 @@ xkb_symbols "dvp-eu" {
 	// Upper row, right side
 	key <AD06> { [f,		F] }; // 
 	key <AD07> { [g,		G] }; // 
-	key <AD08> { [c,		C] }; // 
+	key <AD08> { [c,		C,		ccedilla,	Ccedilla] }; //  c C ç Ç
 	key <AD09> { [r,		R,		Greek_rho,	Greek_RHO] }; // r R ρ Ρ
 	key <AD10> { [l,		L,		Greek_lambda,	Greek_LAMBDA] }; // l L λ Λ
 	key <AD11> { [slash,		question] }; // 
