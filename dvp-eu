@@ -55,7 +55,7 @@ xkb_symbols "dvp-eu" {
 	key <AC05> { [i,		I,		igrave,		iacute] }; // i I ì í
 
 	// home row, right side
-	key <AC06> { [d,		D] }; // d D
+	key <AC06> { [d,		D,		Greek_delta,	Greek_DELTA] }; // d D δ Δ
 	key <AC07> { [h,		H] }; // h H
 	key <AC08> { [t,		T,		Greek_tau,	Greek_TAU] }; // t T τ Τ
 	key <AC09> { [n,		N,		ntilde,		Ntilde] }; // n N ñ Ñ
