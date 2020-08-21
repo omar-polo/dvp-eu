@@ -32,7 +32,7 @@ xkb_symbols "dvp-eu" {
 	key <BKSP> { [BackSpace] }; // backspace
 
 	// Upper row, left side
-	key <AD01> { [semicolon,	colon] }; // ; :
+	key <AD01> { [apostrophe,	quotedbl,	grave] }; // ' " `
 	key <AD02> { [comma,		less,		guillemotleft] }; // , < «
 	key <AD03> { [period,		greater,	guillemotright] }; // . > »
 	key <AD04> { [p,		P,		Greek_pi,	Greek_PI] }; // p P π Π
@@ -76,7 +76,7 @@ xkb_symbols "dvp-eu" {
 
 	// lower row, left side
 	key <LSGT> { [Multi_key,	ssharp,		Greek_alpha,	Greek_ALPHA] };
-	key <AB01> { [apostrophe,	quotedbl,	grave] }; // ' " `
+	key <AB01> { [semicolon,	colon] }; // ; :
 	key <AB02> { [q,		Q] }; // q Q
 	key <AB03> { [j,		J] }; // j J
 	key <AB04> { [k,		K] }; // k K
