@@ -1,7 +1,8 @@
 * dvp-eu
 
   Just another variant of the dvorak layout, made for programmers that
-  need also to type in non-english languages.
+  need also to type in non-english languages (mainly Italian and maybe
+  other European languages.)
 
 ** Goals
 
@@ -10,25 +11,34 @@
 
 ** Current status
 
-   This project is in its early stage of development. I'm still
-   looking for some ideas and feedback so the placement of some keys
-   may change, until a stable release.
+   I've been using this for some years now, and for a very long time
+   without modifying it, so I think I can consider it finished.
+
+   There may still be improvements to made, and I would like to
+   include a =patch= directory in the future with some "popular"
+   variant.
 
 ** Usage
 
    Just put the =dvp-eu= file in some decent place, like
-   =/usr/X11R6/share/X11/xkb/symbols/= on OpenBSD, and =loadkeys
-   dvp-eu=. Than you're done!
+   =/usr/X11R6/share/X11/xkb/symbols/= on OpenBSD, the load it with
+   =setxkbmap=.  In my =.xsession= I have:
+
+   #+begin_src sh
+     setxkbmap dvorak -option # remove all options
+     setxkbmap dvp-eu -option lv3:ralt_switch -option ctrl:swapcaps
+   #+end_src
 
 ** Preview
 
-   Given that, as of now, the layout is still not definitive, I'm not
-   providing any preview of the placement. I'll provide one when it
-   will be finished. As of now, you can get a preview of the keyboard
-   with
+   #+CAPTION: The keyboard (caps lock and control aren't switched by the layout)
+   #+NAME: fig:preview
+   [[./preview.png]]
+
+   The preview was generated with:
 
    #+BEGIN_SRC sh
-   setxkbmap dvp-eu -print | xkbcomp - - | xkbprint - - | ps2pdf -pict all - > dvp-eu.pdf
+   setxkbmap dvp-eu -print | xkbcomp - - | xkbprint - - > dvp-eu.ps
    #+END_SRC
 
 ** Contributing
